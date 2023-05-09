@@ -8,9 +8,9 @@ resource "aws_instance" "frontend" {
   }
 }
 
-output "frontend_pulic_ip" {
-  value = aws_instance.frontend
-}
+#output "frontend_pulic_ip" {
+ # value = aws_instance.frontend
+#}
 
 
 data "aws_ami" "devops_practice_ami" {
