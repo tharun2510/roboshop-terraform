@@ -10,7 +10,7 @@ data "aws_security_group" "sg" {
 
 
 variable "components" {
-  default=[frontend,mongodb,mysql]
+  default=["frontend","mongodb","mysql"]
 }
 
 
