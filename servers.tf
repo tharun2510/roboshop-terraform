@@ -14,7 +14,7 @@ tags = {
 resource "aws_route53_record" "domain_name" {
   for_each = var.components
   zone_id = "Z0542401RTZBLNQX3LCC"
-  name    = "${each.value["name"]}-dev.devops2510.online"
+  name    = "${each.value["name"]}.devops2510.online"
   type    = "A"
   ttl     = 30
   records = [aws_instance.instances[each.value["name"]].public_ip]
