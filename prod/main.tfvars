@@ -1,42 +1,42 @@
 components = {
-  frontend-prod = {
-    name          = "frontend-prod"
+  frontend = {
+    name          = "frontend"
     instance_type = "t3.micro"
   }
-  mongodb-prod = {
-    name          = "mongodb-prod"
+  mongodb = {
+    name          = "mongodb"
     instance_type = "t3.micro"
   }
-  catalogue-prod = {
-    name          = "catalogue-prod"
+  catalogue = {
+    name          = "catalogue"
     instance_type = "t3.micro"
   }
-  redis-prod = {
-    name          = "redis-prod"
+  redis = {
+    name          = "redis"
     instance_type = "t3.micro"
   }
-  user-prod = {
-    name          = "user-prod"
+  user = {
+    name          = "user"
     instance_type = "t3.micro"
   }
-  mysql-prod = {
-    name          = "mysql-prod"
+  mysql = {
+    name          = "mysql"
     instance_type = "t3.micro"
   }
-  cart-prod = {
-    name          = "cart-prod"
+  cart = {
+    name          = "cart"
     instance_type = "t3.micro"
   }
-  shipping-prod = {
-    name          = "shipping-prod"
+  shipping = {
+    name          = "shipping"
     instance_type = "t3.micro"
   }
-  rabbitmq-prod = {
-    name          = "rabbitmq-prod"
+  rabbitmq = {
+    name          = "rabbitmq"
     instance_type = "t3.micro"
   }
-  payment-prod = {
-    name          = "payment-prod"
+  payment = {
+    name          = "payment"
     instance_type = "t3.micro"
   }
 }
