@@ -38,7 +38,7 @@ resource "null_resource" "null" {
   provisioner "remote-exec" {
     inline = [
       "rm -rf roboshop-shell",
-      "https://github.com/raghudevopsb72/roboshop-shell.git",
+      "git clone https://github.com/raghudevopsb72/roboshop-shell.git",
       "cd roboshop-shell",
       "bash  ${each.key}.sh"
     ]
