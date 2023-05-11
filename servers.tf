@@ -24,10 +24,9 @@ resource "aws_route53_record" "domain_name" {
 
 
 resource "null_resource" "null" {
- for_each=var.components
 
   depends_on = [aws_instance.instances , aws_route53_record.domain_name ]
-
+  for_each=var.components
   connection {
     type     = "ssh"
     user     = "centos"
