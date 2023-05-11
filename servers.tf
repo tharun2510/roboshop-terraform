@@ -39,7 +39,7 @@ resource "null_resource" "null" {
       "rm -rf roboshop-shell",
       "git clone https://github.com/raghudevopsb72/roboshop-shell.git",
       "cd roboshop-shell",
-      "bash  ${each.key}.sh"
+      "sudo bash  ${each.key}.sh"
     ]
   }
 }
