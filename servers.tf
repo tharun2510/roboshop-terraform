@@ -19,7 +19,7 @@ resource "aws_route53_record" "domain_name" {
   name    = "${each.value["name"]}-dev.devops2510.online"
   type    = "A"
   ttl     = 30
-  records = [aws_instance.instances["${each.key}"].public_ip]
+  records = [aws_instance.instances["${each.key}"].private_ip]
 }
 
 
