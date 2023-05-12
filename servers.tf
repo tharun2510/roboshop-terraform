@@ -31,7 +31,7 @@ resource "null_resource" "null" {
 
   provisioner "remote-exec" {
 
-    connection {`
+    connection {
       type     = "ssh"
       user     = "centos"
       password = "DevOps321"
@@ -42,7 +42,7 @@ resource "null_resource" "null" {
       "rm -rf roboshop-shell",
       "git clone https://github.com/tharun2510/roboshop-shell.git",
       "cd roboshop-shell",
-      "sudo bash  ${each.key}.sh  ${each.value["password"},
+      "sudo bash  ${each.key}.sh  ${lookup(, )}
     ]
   }
 }
