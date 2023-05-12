@@ -42,7 +42,7 @@ resource "null_resource" "null" {
       "rm -rf roboshop-shell",
       "git clone https://github.com/tharun2510/roboshop-shell.git",
       "cd roboshop-shell",
-      "sudo bash  ${each.key}.sh  ${lookup(, )}
+      "sudo bash  ${each.key}.sh  ${lookup(each.value,"password","null" )}"
     ]
   }
 }
