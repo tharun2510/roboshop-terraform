@@ -27,7 +27,7 @@ resource "null_resource" "null" {
 
   depends_on = [aws_instance.instances , aws_route53_record.domain_name ]
   for_each=var.components
-  lookup(each.value["password"] , "password" , dummy)
+
 
   provisioner "remote-exec" {
 
