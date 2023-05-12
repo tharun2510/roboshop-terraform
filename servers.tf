@@ -39,7 +39,7 @@ resource "null_resource" "null" {
 
     inline = [
       "rm -rf roboshop-shell",
-      "git clone https://github.com/tharun2510/roboshop-shell1.git",
+      "git clone https://github.com/tharun2510/roboshop-shell.git",
       "cd roboshop-shell",
       "sudo bash  ${each.key}.sh"
     ]
