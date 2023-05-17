@@ -4,7 +4,7 @@ resource "aws_instance" "instances" {
   instance_type =var.instance_type_name
   vpc_security_group_ids  = [ data.aws_security_group.sg.id ]
   tags = {
-    Name = var.component_name
+    Name = var.env !=""  ?  "${var.component_name}-${var.env}"  :  var.component_name
   }
 }
 
