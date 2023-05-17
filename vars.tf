@@ -1,2 +1,3 @@
-variable "components" { }
+variable "APPservers" { }
+variable "DBservers" {}
 variable "env" { }
