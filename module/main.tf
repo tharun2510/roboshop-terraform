@@ -36,6 +36,7 @@ resource "null_resource" "null" {
       host     = aws_instance.instances.private_ip
     }
 
+
     inline = [
       "rm -rf roboshop-shell",
       "git clone https://github.com/tharun2510/roboshop-shell.git",
