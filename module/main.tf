@@ -25,7 +25,7 @@ resource "null_resource" "null" {
 
   depends_on = [aws_instance.instances , aws_route53_record.domain_name ]
 
-  count= var.provisioner=="true"  ? 1 : 0
+  count= var.provisioner=="yes"  ? 1 : 0
   provisioner "remote-exec" {
 
     connection {
